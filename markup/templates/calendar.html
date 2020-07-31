@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css" data-inprogress="">
+
+    <link rel="stylesheet" href="../fullcalendar/fullcalendar.css" data-inprogress="">
+    <link rel="stylesheet" href="../css/calendar.css" data-inprogress="">
+    <link rel="stylesheet" href="../css/personal-area-master.css" data-inprogress="">
+    <script src="../js/jquery.min.js"></script>
+    <script src='../fullcalendar/jquery-ui.min.js'></script>
+    <script src='../fullcalendar/moment.js'></script>
+    <script src='../fullcalendar/fullcalendar.js'></script>
+
+
+</head>
+
+<body>
+
+    <div id='calendar'></div>
+
+
+
+
+
+
+    <script>
+        $('#calendar').fullCalendar({
+            plugins: ['dayGrid', 'timeGrid', 'interaction'],
+            defaultView: 'dayGridMonth',
+            firstDay: 1,
+            fixedWeekCount: false,
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            locale: 'ru',
+            defaultDate: '2019-11-12',
+            editable: true,
+            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'οюнь', 'οюль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            monthNamesShort: ['Янв.', 'Фев.', 'Март', 'Апр.', 'Май', 'οюнь', 'οюль', 'Авг.', 'Сент.', 'Окт.', 'Ноя.', 'Дек.'],
+            dayNames: ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"],
+            dayNamesShort: ["ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ"],
+
+            defaultDate: moment(),
+            defaultView: 'month',
+            header: {
+                left: 'prev ',
+                center: 'title',
+                right: 'next'
+            },
+            viewRender: function(view, element) {
+                //The title isn't rendered until after this callback, so we need to use a timeout.
+                window.setTimeout(function() {
+                    $("#calendar").find('.fc-toolbar > div > h2').empty().append(
+                        "<div>" + view.start.format('MM') + "</div>" +
+                        "<div>" + view.end.format('MM') + "</div>"
+                    );
+                }, 0);
+            },
+
+            dayClick: (function() {
+                var lastThis;
+                return function(date, jsEvent, view) {
+                    if (lastThis)
+                        lastThis.css('background-color', 'white');
+                    lastThis = $(this);
+                    $(this).css('background-color', 'lightblue');
+                }
+            })(),
+            events: [{
+                    title: 'All Day Event',
+                    start: '2019-11-01'
+                },
+                {
+                    title: 'Long Event',
+                    start: '2019-11-07',
+                    end: '2019-11-10'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2019-11-09T16:00:00'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2019-11-16T16:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2014-06-12T10:30:00',
+                    end: '2014-06-12T12:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2014-06-12T12:00:00'
+                },
+                {
+                    title: 'Birthday Party',
+                    start: '2014-06-13T07:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'http://google.com/',
+                    start: '2014-06-28'
+                }
+            ]
+        });
+
+
+        // $('.fc-button-prev span').click(function(){
+        //    alert('prev is clicked, do something');
+        // });
+
+        // $('.fc-button-next span').click(function(){
+        //    alert('nextis clicked, do something');
+        // });
+    </script>
+</body>
+
+</html>

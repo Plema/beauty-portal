@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css" data-inprogress="">
+    <link rel="stylesheet" href="../css/client-master.css" data-inprogress="">
+</head>
+
+<body class="body" id="body">
+    <div class="wrapper">
+        <main class="main">
+
+            <header class="header_personal">
+                <div class="container">
+                    <div class="navigation">
+                        <div class="logo">
+                            <a href="index.html"><img alt="" src="../img/logo-dark.png"></a>
+                        </div>
+                        <div class="header_action">
+                            <div class="search">
+                                <i class="icon-search iSearch"></i>
+                                <form class="form">
+                                    <div class="form-input" id="headerSearch">
+                                        <button class="button"><i class="icon-search"></i></button>
+                                        <input name="search" class="search-query" type="text" placeholder="Поиск">
+                                    </div>
+                                    <div class="search-results">
+                                        <a href="javascript:void(0)">Диана Ковалева</a>
+                                        <a href="javascript:void(0)">Наталья Иванова</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="personal_information">
+                                <div class="personal_score">
+                                    <i class="icon-wallet"></i>
+                                    <div class="score">
+                                        <span>На счету: 1000 руб.</span>
+                                        <a href="personal-area-settings.html#balance" data-id="#balance" class="replenish">Пополнить</a>
+                                    </div>
+                                </div>
+                                <a href="master-organaizer.html" class="calendar"><i class="icon-calendar"></i><span>Календарь</span></a>
+                                <a class="notification" href="javascript:void(0)">
+                        <i class="icon-bell-1"></i>
+                    </a>
+                                <ul class="dropdown-notification">
+                                    <li>
+                                        <a href="javascript:void(0)" class="link-notification"></a>
+                                        <div class="avatar">
+                                            <img src="../img/avatar-7.jpg" alt="avatar"></div>
+                                        <span>У вас новое сообщение от Ирины Ивановой</span>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="link-notification"></a>
+                                        <div class="avatar">
+                                            <img src="../img/avatar-7.jpg" alt="avatar"></div>
+                                        <span>У вас новое сообщение от Ирины Ивановой</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <i class="icon-3-dots"></i>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="avatar">
+                                <img src="../img/avatar-7.jpg" alt="avatar">
+                                <span style="background-image: url(../img/diamond.png);"></span>
+                            </div>
+                            <div class="name">
+                                <span>Наталья Иванова</span>
+                                <span>Лучший мастер</span>
+                            </div>
+                            <a href="#"><i class="icon-arrow-down"></i></a>
+                            <div class="dropdown-user">
+                                <ul>
+                                    <li>
+                                        <a href="personal-area-settings.html#my-account" data-id="#my-account" class="go-to link-account"><span class="profile"></span>Профиль </a>
+                                    </li>
+                                    <li>
+                                        <a href="personal-area-settings.html#advertising" data-id="#advertising" class="go-to link-advertising"><i class="icon-increase"></i>Реклама</a>
+                                    </li>
+                                    <li>
+                                        <a href="personal-area-settings.html#services" data-id="#services" class="go-to link-services"><span class="services">
+                                    <span></span>
+                                    <span></span>
+                                </span>Услуги</a>
+                                    </li>
+                                    <li>
+                                        <a href="personal-area-settings.html#rating" data-id="#rating" class="go-to link-rating"><i class="icon-icon1"></i>Рейтинг</a>
+                                    </li>
+                                    <li>
+                                        <a href="personal-area-settings.html#balance" data-id="#balance" class="go-to link-balance"><i class="icon-wallet"></i>Баланс</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="modall-message">
+                <div class="modall-body">
+                    <span class="close"></span>
+                    <form class="form">
+                        <div class="heading">
+                            <h2>
+                                Запись к мастеру
+                            </h2>
+                            <div class="item-user">
+                                <div class="avatar">
+                                    <img src="../img/avatar-1.jpg" alt="avatar">
+                                    <span style="background-image: url(../img/diamond.png);"></span>
+                                </div>
+                                <div class="item-name">
+                                    <p>Наталья Иванова</p>
+                                    <span>Лучший мастер</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <textarea></textarea>
+                                <div class="form-column">
+                                    <ul class="message-form">
+                                        <li><i class="icon-smile"></i></li>
+                                        <li>
+                                            <div class="writeMessage-file">
+                                                <input type="file" name="file" id="file" class="inputfile" accept="image/*">
+                                                <label for="file"><i class="icon-icon26"></i></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-action">
+                                <button class="button_light">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="politics-modall">
+                <div class="politics-content">
+                    <span class="close"></span>
+                    <h2>Политика договора-оферты</h2>
+                    <div class="politics-body mCustomScrollbar">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                        <h3>Quis ipsum suspendisse</h3>
+                        <ul>
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                        </ul>
+                        <h3>Quis ipsum suspendisse</h3>
+                        <ol type="1">
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                        </ol>
+                        <ol type="1">
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                            <li>
+                                <p> Quis ipsum suspendisse </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="personal_area_content">
+                    <aside class="aside">
+                        <ul>
+                            <li><a href="index.html"><i class="icon-arrow-in-menu"></i>Главная</a></li>
+                            <li><a href="client-client.html"><i class="icon-home"></i>Моя страница</a></li>
+                            <li><a href="client-record.html"><i class="icon-calendar"></i>Заявки</a></li>
+                            <li><a href="#"><i class="icon-woman"></i>Клиенты</a></li>
+                            <li><a href="client-history.html"><i class="icon-file"></i>История</a></li>
+                            <li><a href="client-message.html"><i class="icon-envelope"></i>Сообщения</a></li>
+                            <li><a href="сlient-event-client.html"><i class="icon-meeting"></i>Мероприятия</a></li>
+                            <li><a href="#"><i class="icon-student"></i>Обучение</a></li>
+                        </ul>
+                    </aside>
+                    <section class="section section_master">
+                        <div class="item-profile">
+                            <div class="heading">
+                                <div class="widgets">
+                                    <div class="widget-user">
+                                        <div class="option">
+                                            <span class="close"></span>
+                                            <div class="option-cintent">
+                                                <ul>
+                                                    <li><a href="javascript:void(0)">Добавить в
+                                                            черный список</a>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)">Любимые
+                                                            мастера</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <i class="option-dots icon-3-dots"></i>
+                                        </div>
+                                        <div class="avatar">
+                                            <img src="../img/avatar-7.jpg" alt="avatar">
+                                            <a href="master-client.html"></a>
+                                            <span style="background-image: url(../img/diamond.png);"></span>
+                                        </div>
+                                        <div class="name">
+                                            <span>Наталья Иванова<a href="master-client.html"></a></span>
+                                            <span>Лучший мастер</span>
+                                        </div>
+                                        <a href="#" class="send"><i class="icon-envelope"></i></a>
+
+                                    </div>
+                                    <div class="widget-client">
+                                        <h3>Любимые мастера
+                                        </h3>
+                                        <div class="list">
+                                            <div class="avatar">
+                                                <img src="../img/avatar-1.jpg" alt="avatar">
+                                                <a href="javascript:void(0)"></a>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-2.jpg" alt="avatar">
+                                                <a href="javascript:void(0)"></a>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-3.jpg" alt="avatar">
+                                                <a href="javascript:void(0)"></a>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-4.jpg" alt="avatar">
+                                                <a href="javascript:void(0)"></a>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-5.jpg" alt="avatar">
+                                                <a href="javascript:void(0)"></a>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-6.jpg" alt="avatar">
+                                                <a href="javascript:void(0)"></a>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-7.jpg" alt="avatar">
+                                                <a href="javascript:void(0)"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-profile">
+                                <div class="heading">
+                                    <h3>Отзывы</h3>
+                                    <div class="heading_action">
+                                        <ul>
+                                            <li><a href="javascript:void(0)" class="button_light">Негативные отзывы</a>
+                                            </li>
+                                            <li><a href="javascript:void(0)" class="button_light">Положительные
+                                                    отзывы</a></li>
+                                            <li><a href="javascript:void(0)" class="button_light active">Отзывы
+                                                    мастеру</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="reviews mCustomScrollbar">
+                                    <div class="item-description">
+                                        <div class="item-title">
+                                            <div class="avatar">
+                                                <img src="../img/avatar-1.jpg" alt="avatar">
+                                                <a href="master-client.html"></a>
+                                            </div>
+                                            <div class="title">
+                                                <span>25.05.19</span>
+                                                <h3>Наталья Иванова<a href="master-client.html"></a></h3>
+                                                <p>Салон “Николь”</p>
+                                            </div>
+                                        </div>
+                                        <p class="content">
+                                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текслатинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                                            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                                        </p>
+                                        <i class="like icon-like"></i>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="item-title">
+                                            <div class="avatar">
+                                                <img src="../img/avatar-2.jpg" alt="avatar">
+                                                <a href="master-client.html"></a>
+                                            </div>
+                                            <div class="title">
+                                                <span>25.05.19</span>
+                                                <h3>Наталья Иванова<a href="master-client.html"></a></h3>
+                                                <p>Салон “Николь”</p>
+                                            </div>
+                                        </div>
+                                        <p class="content">
+                                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текслатинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                                            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
+                                        </p>
+                                        <i class="dislike icon-dislike"></i>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="item-title">
+                                            <div class="avatar">
+                                                <img src="../img/avatar-3.jpg" alt="avatar">
+                                                <a href="master-client.html"></a>
+                                            </div>
+                                            <div class="title">
+                                                <span>25.05.19</span>
+                                                <h3>Наталья Иванова<a href="master-client.html"></a></h3>
+                                                <p>Салон “Николь”</p>
+                                            </div>
+                                        </div>
+                                        <p class="content">
+                                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текслатинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                                            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
+                                        </p>
+                                        <i class="like icon-like"></i>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="item-title">
+                                            <div class="avatar">
+                                                <img src="../img/avatar-4.jpg" alt="avatar">
+                                                <a href="master-client.html"></a>
+                                            </div>
+                                            <div class="title">
+                                                <span>25.05.19</span>
+                                                <h3>Наталья Иванова<a href="master-client.html"></a></h3>
+                                                <p>Салон “Николь”</p>
+                                            </div>
+                                        </div>
+                                        <p class="content">
+                                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текслатинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                                            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
+                                        </p>
+                                        <i class="dislike icon-dislike"></i>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="item-title">
+                                            <div class="avatar">
+                                                <img src="../img/avatar-5.jpg" alt="avatar">
+                                                <a href="master-client.html"></a>
+                                            </div>
+                                            <div class="title">
+                                                <span>25.05.19</span>
+                                                <h3>Наталья Иванова<a href="master-client.html"></a></h3>
+                                                <p>Салон “Николь”</p>
+                                            </div>
+                                        </div>
+                                        <p class="content">
+                                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текслатинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                                            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
+                                        </p>
+                                        <i class=" like icon-like"></i>
+                                    </div>
+                                </div>
+                                <div class="writeMessage">
+                                    <form>
+                                        <ul class="message">
+                                            <li><i class="icon-smile"></i></li>
+                                            <li>
+                                                <div class="writeMessage-file">
+                                                    <input type="file" name="file" id="file" class="inputfile" accept="image/*">
+                                                    <label for="file"><i class="icon-icon26"></i></label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="icon-like"></i>
+                                            </li>
+                                            <li>
+                                                <i class="icon-dislike"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="writeMessage-text">
+                                            <textarea class="checkTextarea" placeholder="Написать свой отзыв" type="text"></textarea>
+                                            <button></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer_body">
+                        <div class="logo">
+                            <a href="index.html"><img alt="" src="../img/logo.png"></a>
+                        </div>
+                        <p> © Все права защищены, 2019</p>
+                        <a href="javascript:void(0)" class="politics">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css" data-inprogress="">
+    <link rel="stylesheet" href="../css/registration.css" data-inprogress="">
+
+</head>
+
+<body class="body" id="body">
+    <div class="wrapper">
+        <main class="main">
+
+            <!-- build:section layout.header-->
+            <!-- /build -->
+
+            <!-- build:section layout.pop_up_politics-->
+            <!-- /build -->
+
+            <section class="section section_registration">
+                <div class="logo">
+                    <a href="index.html"><img alt="" src="../img/logo.png"></a>
+                </div>
+                <div class="container">
+                    <div class="list_step">
+                        <div class="item_step"><a href="#" class="button">Шаг 1</a></div>
+                        <div class="item_dots"></div>
+                        <div class="item_step"><a href="#" class="button step-two">Шаг 2</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_form">
+                <div class="container">
+                    <form class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-column">
+                                    <input required type="text" name="name" id='name' placeholder="Ваш Имя">
+                                    <label class="icon-user icon" for="name"></label>
+                                </div>
+                                <div class="form-column">
+                                    <input required type="tel" name="tel" id="input-tel" placeholder="Ваш телефон">
+                                    <label class="icon-viber icon" for="input-tel"></label>
+                                    <span>Рабочий или контактный</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-column">
+                                    <input required type="text" name="email" id="e-mail"
+                                        placeholder="Ваш e-mail или логин">
+                                    <label class="icon-close-envelope icon" for="e-mail"></label>
+                                </div>
+                                <div class="form-column">
+                                    <input required type="password" name="password" id="password" placeholder="Пароль">
+                                    <label class="icon-lock icon" for="password"></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-column">
+                                    <select
+                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option data-image='../img/user.png'>Выбор регистрации</option>
+                                        <option>Мастер</option>
+                                        <option>Клиент</option>
+                                    </select>
+                                </div>
+                                <div class="form-column">
+                                    <input required type="password" name="confirmation" id="password-confirmation"
+                                        placeholder="Подтверждение пароля">
+                                    <label class="icon-lock icon" for="password-confirmation"></label>
+                                </div>
+                            </div>
+                            <div class="form-action">
+                                <input type="submit" class="modall-active" value="Send">
+                                <label class="button">Далее</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- build:section layout.footer-->
+            <!-- /build -->
+
+        </main>
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/main.min.js"></script>
+    <script>jcf.replaceAll();</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css" data-inprogress="">
+    <link rel="stylesheet" href="../css/personal-area-settings.css" data-inprogress="">
+
+</head>
+
+<body class="body" id="body">
+    <div class="wrapper">
+        <main class="main">
+
+            <!-- build:section layout.header_personal_area-->
+            <!-- /build -->
+
+            <!-- build:section layout.modal_remove_action-->
+            <!-- /build -->
+
+            <!-- build:section layout.modal_freeze-->
+            <!-- /build -->
+
+            <!-- build:section layout.modal_black_list-->
+            <!-- /build -->
+
+            <!-- build:section layout.pop_up_politics-->
+            <!-- /build -->
+
+            <div class="container">
+                <div class="personal_area_content">
+                    <aside class="aside">
+                        <ul>
+                            <li><a href="index.html"><i class="icon-arrow-in-menu"></i>Главная</a></li>
+                            <li><a href="personal-area-master.html"><i class="icon-home"></i>Моя страница</a></li>
+                            <li><a href="master-record.html"><i class="icon-calendar"></i>Заявки</a></li>
+                            <li><a href="master-clients.html"><i class="icon-woman"></i>Клиенты</a></li>
+                            <li><a href="master-story.html"><i class="icon-file"></i>История</a></li>
+                            <li><a href="master-message.html"><i class="icon-envelope"></i>Сообщения</a></li>
+                            <li><a href="master-activities.html"><i class="icon-meeting"></i>Мероприятия</a></li>
+                            <li><a href="master-foto.html"><i class="icon-icon26"></i>Галерея</a></li>
+                            <li><a href="master-reviews.html"><i class="icon-icon16"></i>Отзывы</a></li>
+                            <li><a href="master-suppliers.html"><i class="icon-shopping-cart"></i>Поставщики</a></li>
+                            <li><a href="#"><i class="icon-student"></i>Обучение</a></li>
+                        </ul>
+                    </aside>
+                    <div class="widget">
+                        <ul>
+                            <li id="personal-area" class="active"><i class="icon-lock"></i> Личный кабинет</li>
+                            <li id="my-account"><i class='user'></i>Мой аккаунт</li>
+                            <li id="services"><i class='settings'></i> Мои услуги и акции</li>
+                            <li id="settings"><i class='icon-settings-1'></i>Настройки</li>
+                            <li id="advertising"><i class="icon-increase"></i> Реклама</li>
+                            <li id="rating"><i class="icon-icon1"></i> Рейтинг</li>
+                            <li id="balance"><i class="icon-wallet"></i> Баланс</li>
+                        </ul>
+                    </div>
+                    <section class="section section_settings" id="section_settings">
+                        <div class="personal-area active" data-id="personal-area">
+                            <div class="heading">
+                                <h3>Личный кабинет</h3>
+                            </div>
+                            <form class="form form_master">
+                                <div class="form-group">
+                                    <div class="attached-img">
+                                        <div class="files" id="files-img">
+                                            <div class="file-loading">
+                                                <input id="file-image" type="file" name="file-1[]">
+                                            </div>
+                                        </div>
+                                        <span class="icon-delete"></span>
+                                    </div>
+                                    <span class="add-photo">Загрузить новое фото</span>
+                                </div>
+                                <div class="form-row wrap">
+                                    <div class="form-column">
+                                        <label>Имя и фамилия</label>
+                                        <input required type="text" name="name">
+                                    </div>
+                                    <div class="form-column">
+                                        <label>Телефон</label>
+                                        <input required type="tel" class="phone_mask" pattern="^[0-9-+s()]*$"
+                                            name="telephone">
+                                    </div>
+                                    <div class="form-column">
+                                        <label>Почта</label>
+                                        <input required type="text" name="email" class="email">
+                                    </div>
+                                    <div class="form-column">
+                                        <label>Рабочий адрес</label>
+                                        <input required type="text" name="addres">
+                                    </div>
+                                </div>
+                                <h2>Способ связи и социальные сети</h2>
+                                <div class="form-group nowrap">
+                                    <div class="form-column whatsup">
+                                        <input type="tel" pattern="^[0-9-+s()]*$" name="whatsup" class="phone_mask"
+                                            placeholder="+7 ___ ___ __ __">
+                                    </div>
+                                    <div class="form-column viber">
+                                        <input type="tel" pattern="^[0-9-+s()]*$" name="viber" class="phone_mask"
+                                            placeholder="+7 ___ ___ __ __">
+                                    </div>
+                                    <div class="form-column telegram">
+                                        <input type="tel" pattern="^[0-9-+s()]*$" name="telegram" class="phone_mask"
+                                            placeholder="+7 ___ ___ __ __">
+                                    </div>
+                                </div>
+                                <div class="form-group social">
+                                    <span class="description">*Вы можете прикрепить только 2 соц. сети на ваш
+                                        выбор</span>
+                                    <div class="form-column">
+                                        <input type="checkbox" name="vk" value="vk" id="check-1">
+                                        <label for="check-1" class="icon-vk-social"></label>
+                                        <input type="text" name="vk" type="url" class="url" pattern="https://.*"
+                                            size="30" placeholder="https://">
+                                    </div>
+                                    <div class="form-column">
+                                        <input type="checkbox" name="facebook" value="facebook" id="check-2">
+                                        <label for="check-2" class="icon-facebook-social"></label>
+                                        <input type="text" name="facebook" type="url" class="url" pattern="https://.*"
+                                            size="30" placeholder="https://">
+                                    </div>
+                                    <div class="form-column">
+                                        <input type="checkbox" name="instagram" value="instagram" id="check-3">
+                                        <label for="check-3" class="icon-instagram-social"></label>
+                                        <input type="text" name="instagram" placeholder="username" class="username"
+                                            pattern="/^[-a-zA-Z0-9]+$/">
+                                    </div>
+                                </div>
+                                <h2 class="title" id="title-anchor">О себе</h2>
+                                <div class="form-row wrap ">
+                                    <div class="select">
+                                        <label>Специализация</label>
+                                        <div class="select-options">
+                                        </div>
+                                        <select id="elementId"
+                                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                            <option>Специализация</option>
+                                            <option>Специализация</option>
+                                        </select>
+                                        <span class="add-select" id="add-select">+</span>
+                                    </div>
+                                    <div class="select">
+                                        <label>Категория</label>
+                                        <div class="select-options2">
+                                        </div>
+                                        <select id="elementId2"
+                                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                            <option>Категория</option>
+                                            <option>Категория</option>
+                                        </select>
+                                        <span class="add-select" id="add-select2">+</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="attached-doc">
+                                        <div class="files" id="files">
+                                            <div class="file-loading">
+                                                <input id="file-1" type="file" name="file-1[]" multiple=''>
+                                            </div>
+                                            <span class="btn-brows">Загрузить фото</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-column count-limit">
+                                        <label>Заголовок</label>
+                                        <textarea class="limited" maxlength=60> </textarea>
+                                        <div class="limit"><span>60</span>/60</div>
+                                    </div>
+                                    <div class="form-column indentation">
+                                        <label>Текст</label>
+                                        <textarea></textarea>
+                                    </div>
+                                    <div class="form-column">
+                                        <label>Ссылка на видео</label>
+                                        <input type="url" class="url" name="link" placeholder="https://">
+                                    </div>
+                                    <div class="form-action">
+                                        <button class="button_light">Сохранить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="my-account" data-id="my-account">
+                            <div class="heading">
+                                <h3>Мой аккаунт</h3>
+                            </div>
+                            <p>Выберите тип Вашего аккаунта:</p>
+                            <div class="list">
+                                <div class="item-list">
+                                    <div class="item-icon">
+                                        <i class="icon-premium-badge"></i>
+                                    </div>
+                                    <h4>Стандарт</h4>
+                                    <ul>
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore
+                                        </li>
+                                        <li>
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut aliquip ex ea
+                                        </li>
+                                        <li>
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                            cupidatat
+                                        </li>
+                                        <li>
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            Sed ut perspiciatis unde omnis iste
+                                        </li>
+                                        <li>
+                                            natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                            aperiam, eaque ipsa quae ab
+                                        </li>
+                                    </ul>
+                                    <button class="button_light">Активен</button>
+                                </div>
+                                <div class="item-list">
+                                    <div class="item-icon">
+                                        <i class="icon-crown"></i>
+                                    </div>
+                                    <h4>PRO</h4>
+                                    <ul>
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore
+                                        </li>
+                                        <li>
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut aliquip ex ea
+                                        </li>
+                                        <li>
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                            cupidatat
+                                        </li>
+                                        <li>
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            Sed ut perspiciatis unde omnis iste
+                                        </li>
+                                        <li>
+                                            natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                            aperiam, eaque ipsa quae ab
+                                        </li>
+                                    </ul>
+                                    <button class="button_light">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings" data-id="settings">
+                            <div class="heading">
+                                <h3>Настройки</h3>
+                            </div>
+                            <form class="form">
+                                <div class="form-row base-fields">
+                                    <div class="form-column">
+                                        <label>Lorem ipsum</label>
+                                        <input type="text" name="lorem">
+                                    </div>
+                                    <div class="select">
+                                        <label>Lorem ipsum</label>
+                                        <select
+                                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                            <option></option>
+                                            <option>Категория</option>
+                                            <option>Категория</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <label>Lorem ipsum</label>
+                                        <select
+                                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                            <option></option>
+                                            <option>Категория</option>
+                                            <option>Категория</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <label>Lorem ipsum</label>
+                                        <select
+                                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                            <option></option>
+                                            <option>Категория</option>
+                                            <option>Категория</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-setting">
+                                    <div class="settingWrap">
+                                        <label for="checked-1" class="label">Lorem ipsum</label>
+                                        <input type="checkbox" checked id="checked-1">
+                                    </div>
+                                    <div class="settingWrap">
+                                        <label for="checked-2" class="label">Режим «ночь»</label>
+                                        <input type="checkbox" id="checked-2">
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="value4" type="checkbox">
+                                        <label for="value4">Lorem ipsum dolor si amet<span
+                                                class="show-reference">?</span></label>
+                                        <div class="reference">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="value1" type="checkbox" checked>
+                                        <label for="value1">Lorem ipsum</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="value2" type="checkbox">
+                                        <label for="value2">Lorem ipsum</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="value3" type="checkbox">
+                                        <label for="value3">Lorem ipsum</label>
+                                    </div>
+                                </div>
+                                <span class="title-range">Lorem ipsum</span>
+                                <div id="slider-range"><span class="defalt-range">0</span><span
+                                        id="result-range"></span></div>
+                                <h2 class="title">Заголовок</h2>
+                                <div class="form-group">
+                                    <div class="form-column column-checkbox">
+                                        <input type="checkbox" checked name="" value="" id="checked-2">
+                                        <label for="checked-2">Lorem ipsum</label>
+                                    </div>
+                                    <div class="form-column column-checkbox">
+                                        <input type="checkbox" name="" value="" id="checked-3">
+                                        <label for="checked-3">Lorem ipsum</label>
+                                    </div>
+                                    <div class="form-column column-checkbox">
+                                        <input type="checkbox" name="" value="" id="checked-4">
+                                        <label for="checked-4">Lorem ipsum</label>
+                                    </div>
+                                    <div class="form-column column-checkbox">
+                                        <input type="checkbox" checked name="" value="" id="checked-5">
+                                        <label for="checked-5">Lorem ipsum</label>
+                                    </div>
+                                    <div class="form-column column-checkbox">
+                                        <input type="checkbox" name="" value="" id="checked-6">
+                                        <label for="checked-6">Lorem ipsum</label>
+                                    </div>
+                                </div>
+                                <div class="form-group group-notifications">
+                                    <div class="settingWrapCheckbox">
+                                        <div class="settingWrap__title">
+                                            <i class="icon icon-thunder"></i>
+                                            <div class="text">
+                                                <p>Показать
+                                                    мгновенные
+                                                    уведомления</p>
+                                            </div>
+                                        </div>
+                                        <label class="settingWrap__input">
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="settingWrapCheckbox">
+                                        <div class="settingWrap__title">
+                                            <i class="icon icon-speaker"></i>
+                                            <div class="text">
+                                                <p>Показать уведомления со звуком</p>
+                                            </div>
+                                        </div>
+                                        <label class="settingWrap__input">
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="settingWrapCheckbox">
+                                        <div class="settingWrap__title">
+                                            <i class="icon  icon-icon10"></i>
+                                            <div class="text">
+                                                <p>Показывать
+                                                    текст сообщения</p>
+                                            </div>
+                                        </div>
+                                        <label class="settingWrap__input">
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-row row-list">
+                                    <ul class="list-changes">
+                                        <li>
+                                            <p>Lorem ipsum dolor
+                                                si amet<span>разрешено</span></p>
+                                            <a href="#">Изменить</a>
+                                        </li>
+                                        <li>
+                                            <p>Lorem ipsum dolor
+                                                si amet<span>разрешено</span></p>
+                                            <a href="#">Изменить</a>
+                                        </li>
+                                        <li>
+                                            <p>Lorem ipsum dolor
+                                                si amet<span>разрешено</span></p>
+                                            <a href="#">Изменить</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-row row-list">
+                                    <div class="heading-list">
+                                        <h3>Черный список</h3>
+                                        <a href="javascript:void(0)" class="button-black-list">поделиться списком<i
+                                                class="icon-share"></i></a>
+                                    </div>
+                                    <ul class="black-list mCustomScrollbar">
+                                        <li>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-1.jpg" alt="avatar">
+                                            </div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    Евгения Шульга
+                                                </a>
+                                            </div>
+                                            <div class="item-action">
+                                                <span>x</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-2.jpg" alt="avatar">
+                                            </div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    Анна Коваль
+                                                </a>
+                                            </div>
+                                            <div class="item-action">
+                                                <span>x</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-2.jpg" alt="avatar">
+                                            </div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    Наталья Иванова
+                                                </a>
+                                            </div>
+                                            <div class="item-action">
+                                                <span>x</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avatar">
+                                                <img src="../img/avatar-2.jpg" alt="avatar">
+                                            </div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    Наталья Иванова
+                                                </a>
+                                            </div>
+                                            <div class="item-action">
+                                                <span>x</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="freeze-page">Вы можете<a href="javascript:void(0)"
+                                        class="freeze-button">заморозить</a>свою страницу</p>
+                                <button class="button_light">Сохранить</button>
+                            </form>
+                        </div>
+                        <div class="services" data-id="services">
+                            <div class="heading">
+                                <h3>Мои услуги и акции</h3>
+                            </div>
+                            <h4>Все услуги</h4>
+                            <ul class="mCustomScrollbar">
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Lorem Ipsum - это текст-"рыба",
+                                        часто используемый в печати
+                                        вэб-дизайне.</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                            </ul>
+                            <h4>Все акции</h4>
+                            <ul class="mCustomScrollbar">
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Lorem Ipsum - это текст-"рыба",
+                                        часто используемый в печати
+                                        вэб-дизайне.</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)" class="button_light">Сделать
+                                            акцию</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                                <li>
+                                    <span class="title-list">Покраска волос в
+                                        технике омбре</span>
+                                    <div class="price"><span>от 10 000 руб.</span><span>от 3 до 5 часов</span></div>
+                                    <div class="option">
+                                        <span class="close"></span>
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)"><i
+                                                            class="icon-highlighter"></i>Редактировать</a>
+                                                </li>
+                                                <li><a href="javascript:void(0)"><i class="icon-bin"></i>Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i class="option-dots icon-3-dots"></i>
+                                    </div>
+                                    <div class="action"><a href="javascript:void(0)"
+                                            class="button_light remove-button">Снять с акции</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="balance" data-id="balance">
+                            <div class="heading">
+                                <h3>Баланс</h3>
+                            </div>
+                            <div class="balance-data">
+                                <div>
+                                    <span class="balance-title">Текущий баланс: </span>
+                                    <span class="balance-price">500 ₽</span>
+                                </div>
+                                <div>
+                                    <span class="balance-title">Бонусы:</span>
+                                    <span class="balance-price">50 ₽<span class="show-reference">?</span>
+                                        <div class="reference">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <form class="form-payment">
+                                <a href="javascript:void(0)" class="replenish_account">Пополнить счет</a>
+                                <h4>Выберите способ пополнения:</h4>
+                                <div class="radio">
+                                    <div class="radio-item">
+                                        <input id="value_1" type="radio" name="radio_group">
+                                        <label for="value_1">Master Card</label>
+                                    </div>
+                                    <div class="radio-item">
+                                        <input id="value_2" type="radio" name="radio_group" checked>
+                                        <label for="value_2">Яндекс.Деньги</label>
+                                    </div>
+                                    <div class="radio-item">
+                                        <input id="value_3" type="radio" name="radio_group">
+                                        <label for="value_3">Банковская карта</label>
+                                    </div>
+                                </div>
+                                <div class="form-column column-checkbox">
+                                    <input type="checkbox" checked name="privacyPolicy" value="" id="privacy_policy">
+                                    <label for="privacy_policy">я согласен с правилами <a href="javascript:void(0)"
+                                            class="politics">политики
+                                            договора-оферты</a></label>
+                                </div>
+                                <div class="form-action">
+                                    <button class="button_light">Перейти к оплате</button>
+                                </div>
+                                <div class="payment_history">
+                                    <span>Посмотреть историю платежей</span>
+                                    <ul>
+                                        <li>
+                                            <p>Дата</p>
+                                            <p>Сумма</p>
+                                        </li>
+                                        <li>
+                                            <p>22.09.19</p>
+                                            <p>900 ₽</p>
+                                        </li>
+                                        <li>
+                                            <p>23.09.19</p>
+                                            <p>900 ₽</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="rating" data-id="rating">
+                            <div class="heading">
+                                <h3>Рейтинг</h3>
+                            </div>
+                            <h4>Текущий рейтинг:</h4>
+                            <div class="rating-data">
+                                <span>4,6</span>
+                                <i class="icon-icon1" style="color: #fad746;"></i>
+                                <i class="icon-icon1" style="color: #fad746;"></i>
+                                <i class="icon-icon1" style="color: #fad746;"></i>
+                                <i class="icon-icon1"></i>
+                                <i class="icon-icon1"></i>
+                            </div>
+                            <form class="form-rating">
+                                <div class="select">
+                                    <label>Статус:</label>
+                                    <select
+                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option class="icon-diamond">Лучший мастер</option>
+                                        <option>Pro</option>
+                                        <option>Мастер</option>
+                                    </select>
+                                </div>
+                                <div class="rating_formula">
+                                    <span class="show-formula">Открыть формулу просчета рейтинга</span>
+                                    <ul>
+                                        <li>
+                                            <p>Рейтинг</p>
+                                            <span class="description"></span>
+                                            <span>48.5</span>
+                                        </li>
+                                        <li>
+                                            <p>Кол-во работ (портфолио)</p>
+                                            <span class="description"></span>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <p>Кол-во дней с момента регистрации</p>
+                                            <span class="description"></span>
+                                            <span>0.2</span>
+                                        </li>
+                                        <li>
+                                            <p>Кол-во услуг</p>
+                                            <span class="description"></span>
+                                            <span>0.5</span>
+                                        </li>
+                                        <li>
+                                            <p>Кол-во товаров</p>
+                                            <span class="description"></span>
+                                            <span>0.5</span>
+                                        </li>
+                                        <li>
+                                            <p>Кол-во оказанных услуг (принятых клиентов)</p>
+                                            <span class="description">кол-во часов
+                                                на услугу\число</span>
+                                            <span>0.15</span>
+                                        </li>
+                                        <li>
+                                            <p>Кол-во акций</p>
+                                            <span class="description"></span>
+                                            <span>0.3</span>
+                                        </li>
+                                        <li>
+                                            <p>Ранг СУПЕР</p>
+                                            <span class="description"></span>
+                                            <span>2</span>
+                                        </li>
+                                        <li>
+                                            <p>Посещённые мероприятия</p>
+                                            <span class="description"></span>
+                                            <span>0.2</span>
+                                        </li>
+                                        <li>
+                                            <p>Звезды рейтинга</p>
+                                            <span class="description"></span>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <p>Модификатор статуса аккаунта</p>
+                                            <span class="description"></span>
+                                            <span>2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rating_right">
+                                    <div class="generate_promotional_code">
+                                        <span class="promotional-code">Сформировать промо-код<span
+                                                class="show-reference">?</span>
+                                            <div class="reference">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </span>
+                                        <div class="form-column">
+                                            <input type="text">
+                                            <label class="icon-copy-copy"></label>
+                                        </div>
+                                        <div class="promo">
+                                            <img alt="" src='../img/promo.png'>
+                                        </div>
+                                    </div>
+                                    <div class="history">
+                                        <span>Статистика</span>
+                                        <ul>
+                                            <li>
+                                                <p>Имя</p>
+                                                <p>Дата</p>
+                                            </li>
+                                            <li>
+                                                <p>Ирина Иванова</p>
+                                                <p>22.09.19</p>
+                                            </li>
+                                            <li>
+                                                <p>Бонусы</p>
+                                                <p>900 ₽</p>
+                                            </li>
+                                            <li>
+                                                <p>Валентина
+                                                    Сидорова</p>
+                                                <p>23.09.19</p>
+                                            </li>
+                                            <li>
+                                                <p>Бонусы</p>
+                                                <p>900 ₽</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="advertising" data-id="advertising">
+                            <div class="heading">
+                                <h3>Реклама</h3>
+                            </div>
+                            <form class="form">
+                                <div class="form-group">
+                                    <div class="settingWrapCheckbox">
+                                        <div class="settingWrap__title">
+                                            <i class="icon icon-increase"></i>
+                                            <h4>Поднять в ТОП - <span>500 ₽</span></h4>
+                                            <label class="settingWrap__input">
+                                                <input type="checkbox">
+                                            </label>
+                                        </div>
+                                        <div class="text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="settingWrapCheckbox">
+                                        <div class="settingWrap__title">
+                                            <i class="icon icon-pin"></i>
+                                            <h4>Закрепить - <span>500 ₽</span></h4>
+                                            <label class="settingWrap__input">
+                                                <input type="checkbox">
+                                            </label>
+                                        </div>
+                                        <div class="text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="settingWrapCheckbox">
+                                        <div class="settingWrap__title">
+                                            <i class="icon  icon-highlighter"></i>
+                                            <h4>Выделить - <span>500 ₽</span></h4>
+                                            <label class="settingWrap__input">
+                                                <input type="checkbox">
+                                            </label>
+                                        </div>
+                                        <div class="text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advertising-description">
+                                    <h2>Рекламные размещения</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum. Стоимость одного
+                                        размещения - <span>500 ₽</span>
+                                    </p>
+                                </div>
+                                <div class="group-type">
+                                    <h3 class="title">Выберите тип размещения:</h3>
+                                    <div class="form-group">
+                                        <div class="form-column column-checkbox">
+                                            <input type="checkbox" checked name="" value="" id="checked-img">
+                                            <label for="checked-img"><img src="../img/form_1.png"></label>
+                                        </div>
+                                        <div class="form-column column-checkbox">
+                                            <input type="checkbox" name="" value="" id="checked-img-2">
+                                            <label for="checked-img-2"><img src="../img/form_2.png"></label>
+                                        </div>
+                                        <div class="form-column column-checkbox">
+                                            <input type="checkbox" name="" value="" id="checked-img-3">
+                                            <label for="checked-img-3"><img src="../img/form_3.png"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="attached-advertising">
+                                            <div class="files" id="files-3">
+                                                <div class="file-loading">
+                                                    <input id="file-3" type="file" name="file-1[]" multiple=''>
+                                                </div>
+                                                <span class="btn-brows-3">Загрузить фото для ПК</span>
+                                            </div>
+                                            <span class="description"> *Размер должен быть не меньше
+                                                чем 1242 пикс. по ширине и 190 пикс.
+                                                по высоте </span>
+                                        </div>
+                                        <div class="attached-advertising">
+                                            <div class="files" id="files-4">
+                                                <div class="file-loading">
+                                                    <input id="file-4" type="file" name="file-1[]" multiple=''>
+                                                </div>
+                                                <span class="btn-brows-4">Загрузить фото для
+                                                    мобильной версии</span>
+                                            </div>
+                                            <span class="description description-large"> *Размер должен быть не меньше
+                                                чем 280 пикс. по ширине и 190 пикс.
+                                                по высоте </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="add-accommodation" href="javascript:void(0)"><span
+                                        class="add-select">+</span>Добавить размещение</a>
+                                <button class="button_light">Перейти к оплате</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- build:section layout.footer-->
+            <!-- /build -->
+
+        </main>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/inputmask.js"></script>
+    <script src="../js/jquery.inputmask.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+    <script src="../js/main.min.js"></script>
+    <script src="../js/personal-area-settings.min.js"></script>
+
+</body>
+
+</html>
